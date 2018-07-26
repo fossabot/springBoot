@@ -1,0 +1,22 @@
+#测试属性值
+my:
+servers:
+- dev.example.com
+- another.example.com
+
+
+           
+#配置数据库连接
+spring: 
+     datasource: 
+          url: jdbc:mysql://localhost/test
+          username: root
+          password: root
+          driver-class-name: com.mysql.jdbc.Driver
+          maximum-pool-size: 30
+     mustache: 
+          check-template-location: false      
+     thymeleaf: 
+          check-template-location: false
+     profiles:
+          include: log  #引入log配置文件

@@ -1,0 +1,5 @@
+#配置日志输出文件
+logging:
+       path: /var/log
+       level: 
+           root: WARN
